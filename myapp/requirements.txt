@@ -1,0 +1,4 @@
+kivy
+openai
+opencv-python
+pytesseract
