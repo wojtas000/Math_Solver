@@ -4,7 +4,7 @@ from PIL import Image
 import pytesseract
 
 openai.organization = "org-RZDag05Cl7OVwTMGbmn7eYN4"
-openai.api_key = "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"
+openai.api_key = os.environ.get("OPENAI_API_KEY")
 pytesseract.pytesseract.tesseract_cmd = r'.//Tesseract-OCR//tesseract.exe'
 
 def get_text(image_path):
